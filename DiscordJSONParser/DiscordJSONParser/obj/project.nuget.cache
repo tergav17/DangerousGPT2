@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+owb9F34uSltDgAbXcJkNfCEvTnRWqvxa7+KPTGC/n+FybfHiBGKBNvMuM5vWgDK9ue3AbuUyyccBkVfeVrL2g==",
+  "success": true,
+  "projectFilePath": "C:\\Data\\DangerousGPT2\\DiscordJSONParser\\DiscordJSONParser\\DiscordJSONParser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gcter\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
