@@ -9,7 +9,7 @@ for %%F in (data\*.json) do (
 pushd gpt-2\src
 for %%F in (..\..\data_parsed\*.txt) do (
    echo Encoding %%F
-   python encode.py %%F ..\..\data_encoded\%%~nF.npz
+   python encode.py --combine 10 %%F ..\..\data_encoded\%%~nF.npz
 )
 popd
 

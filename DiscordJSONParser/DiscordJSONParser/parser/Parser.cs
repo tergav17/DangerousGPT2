@@ -25,13 +25,14 @@ namespace DiscordJSONParser.parser {
             
             for (int i = 0; i < size; i++) {
                 string line = discord.messages[i].content;
+                string name = discord.messages[i].author.name;
 
                 if (line.Contains("https://")) continue;
-                if (line.Length < 3);
+                if (line.Length < 5) continue;
 
                 if (i % 1000 == 10) Console.Write(".");
 
-                File.AppendAllText(output, line + '\n' + "<|endoftext|>" + "\n", Encoding.UTF8);
+                File.AppendAllText(output, '<' + name + ">: " + line +'\n' + "<|endoftext|>" + "\n", Encoding.UTF8);
             }
             
             Console.WriteLine('\n' + "Finished");
